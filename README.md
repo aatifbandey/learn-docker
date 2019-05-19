@@ -6,3 +6,13 @@ Set up redis server
 Set up express server
 
 Docker compose to manage services
+
+
+#Some important commands
+
+   # docker build .
+   # docker ps
+   # docker run <containerId>
+   # docker build -t <dockerId>/<projectName> .
+   # docker run -p 8080:8080
+   # docker run <imageName> or <containerId> 
