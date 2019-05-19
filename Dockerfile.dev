@@ -1,0 +1,21 @@
+# Specify a base image
+FROM node:alpine
+
+
+#MOVE PACKAGE OR INDEX INSDIDE A FOLDER IN A CONTAINER
+
+WORKDIR /usr/app
+
+#Install dependency
+
+#COPY PACKAGE FILE AND MOVE INSIDE THE CONTAINER
+#Make use of cache
+COPY ./package.json ./
+
+RUN npm install
+
+COPY ./ ./
+
+
+# Default command
+CMD ["npm", "start"]
