@@ -15,4 +15,4 @@ Docker compose to manage services
    # docker run <containerId>
    # docker build -t aatifbandey/visits .
    # docker run -p 8080:8080
-   # docker run <imageName> or <containerId> 
+   # docker run aatifbandey/visits
